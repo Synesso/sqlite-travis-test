@@ -6,7 +6,7 @@ version := sys.env.getOrElse("TRAVIS_BRANCH", "dev")
 
 scalaVersion := "2.11.12"
 
-fork in test := true
+fork in test := false
 
 scalacOptions ++= Seq(
   "-unchecked",
