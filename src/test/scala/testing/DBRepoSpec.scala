@@ -7,6 +7,8 @@ import org.specs2.mutable.Specification
 
 class DBRepoSpec extends Specification {
 
+  sequential
+
   "mbtile repo" should {
     "do things with the sqlite db" >> {
       val db = new File("do-things-a.db")
